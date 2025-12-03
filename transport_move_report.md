@@ -358,7 +358,7 @@ Cette étude a démontré la **faisabilité de prédire un déménagement à par
 ---
 
 **Date de rédaction :** Décembre 2024  
-**Auteur :**AZDA Fatima-zahra
+**Auteur :** AZDA Fatima-zahra
 
 ---
 
