@@ -2,7 +2,7 @@
 <img src="faat.jpg" style="height:150px;margin-right:100px"/>
 
 
-# Rapport Scientifique : Analyse Prédictive du Déménagement dans le Transport
+# Rapport Scientifique : Analyse Prédictive du Déménagement dans le Transport : Transport
 
 **Dataset :** Transport Move (willianoliveiragibin/transport-move)  
 **Type de problème :** Classification binaire supervisée  
