@@ -217,7 +217,7 @@ plt.xlabel('Prédit')
 plt.show()
 ```
  <img src="matrice confusion.png" style="height:150px;margin-right:100px"/>
- 
+ La matrice de confusion détaille comment le modèle classe les individus entre ceux qui déménagent (classe positive) et ceux qui ne déménagent pas (classe négative). Les vrais positifs (en haut à gauche ou en bas à droite selon l’agencement) correspondent aux individus correctement prédits comme déménageant, tandis que les vrais négatifs sont ceux correctement identifiés comme ne déménageant pas. Les faux positifs représentent des erreurs où le modèle prédit un déménagement alors qu'il n’y en a pas, et les faux négatifs sont des cas où le modèle ne détecte pas un déménagement réel. Cette analyse permet d’évaluer la balance entre sensibilité (rappel) et précision et de mieux comprendre les erreurs critiques à corriger selon l’objectif.
 ### 3.3 Feature Importance
 
 **Top 5 des features les plus discriminantes :**
@@ -234,6 +234,7 @@ plt.show()
 - La variabilité des trajets confirme l'hypothèse de rupture des routines pré-déménagement
 
 ---
+## Code python: 10features importantes
 ```python
 # Heatmap corrélations (top 10 features)
 plt.figure(figsize=(12, 8))
@@ -250,7 +251,7 @@ X_scaled['trip_variability'] = X_scaled.filter(like='trip').std(axis=1)
 print("Nouvelles features créées: distance_per_trip, trip_variability")
 ```
  <img src="TOP 10 features importantes.png" style="height:150px;margin-right:100px"/>
- 
+ Concernant les 10 features importantes, ce sont les variables qui ont le plus contribué à la décision du modèle pour prédire le déménagement. Par exemple, des mesures liées à la distance moyenne parcourue, la fréquence ou la variabilité des trajets peuvent être décisives. Leur pondération dans le modèle reflète leur importance relative : plus une feature a un score élevé, plus elle influence la prédiction. Cette information guide aussi l’interprétation métier, donnant des insights sur quels comportements de transport sont les indicateurs majeurs d’un potentiel déménagement.
 ```python
 # =====================================================
 # ANALYSE PRÉDICTIVE DU DÉMÉNAGEMENT DANS LE TRANSPORT
