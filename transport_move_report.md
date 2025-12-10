@@ -236,19 +236,16 @@ plt.show()
 ---
 ## Code python: 10features importantes
 ```python
-# Heatmap corrélations (top 10 features)
-plt.figure(figsize=(12, 8))
-top_corr = X_scaled.corrwith(y).abs().nlargest(10).index
-corr_matrix = X_scaled[top_corr].corr()
-sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', center=0)
-plt.title("Corrélations - Top 10 features avec target")
-plt.show()
-
-# Feature Engineering
-print("\nFeature Engineering:")
-X_scaled['distance_per_trip'] = X_scaled.filter(like='distance').mean(axis=1)
-X_scaled['trip_variability'] = X_scaled.filter(like='trip').std(axis=1)
-print("Nouvelles features créées: distance_per_trip, trip_variability")
+# Feature importance 
+if hasattr(best_model, 'feature_importances_'):
+    importances = pd.Series(best_model.feature_importances_, 
+                          index=X_scaled.columns).sort_values(ascending=False)
+    plt.figure(figsize=(10, 6))
+    importances.head(10).plot(kind='barh')
+    plt.title('Top 10 features importantes')
+    plt.show()
+    print("\nTop 5 features importantes:")
+    print(importances.head())
 ```
  <img src="TOP 10 features importantes.png" style="height:150px;margin-right:100px"/>
  Concernant les 10 features importantes, ce sont les variables qui ont le plus contribué à la décision du modèle pour prédire le déménagement. Par exemple, des mesures liées à la distance moyenne parcourue, la fréquence ou la variabilité des trajets peuvent être décisives. Leur pondération dans le modèle reflète leur importance relative : plus une feature a un score élevé, plus elle influence la prédiction. Cette information guide aussi l’interprétation métier, donnant des insights sur quels comportements de transport sont les indicateurs majeurs d’un potentiel déménagement.
