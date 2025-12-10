@@ -205,7 +205,17 @@ Réel: Oui (1)             FN              TP
 **Patterns identifiés :**
 - Les erreurs se concentrent probablement sur les individus aux patterns de mobilité ambigus (ni très mobiles, ni très sédentaires)
 - La zone de décision du modèle peut être affinée via l'ajustement du seuil de classification (par défaut 0.5)
-
+```python
+# Matrix de confusion
+plt.figure(figsize=(8, 6))
+cm = confusion_matrix(y_test, y_pred)
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
+plt.title(f'Matrix de confusion - {best_model_name}')
+plt.ylabel('Vrai')
+plt.xlabel('Prédit')
+plt.show()
+```
+ <img src="matrice confusion.png" style="height:150px;margin-right:100px"/>
 ### 3.3 Feature Importance
 
 **Top 5 des features les plus discriminantes :**
@@ -487,7 +497,6 @@ print(f"Meilleur modèle F1-score CV: {results[best_model_name]['cv_mean']:.3f}"
 print(f"Hyperparamètres optimaux: {results[best_model_name]['best_params']}")
 ```
   <img src="GRAPHE1.png" style="height:150px;margin-right:100px"/>
-  <img src="matrice confusion.png" style="height:150px;margin-right:100px"/>
   <img src="matrice correlation.png" style="height:150px;margin-right:100px"/>
    <img src="TOP 10 features importantes.png" style="height:150px;margin-right:100px"/>
 ## 4. Conclusion
