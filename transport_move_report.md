@@ -26,15 +26,15 @@ Voici un **sommaire clair, structuré et académique**, parfaitement aligné ave
 ## Chapitre 1 : Présentation générale du projet
 
 ### 1. Thématique du transport et de la mobilité
- 2. Description du dataset *Transport Move*
-  3. Formulation du problème de classification
+### 2. Description du dataset *Transport Move*
+### 3. Formulation du problème de classification
 
 ---
 
 **Chapitre 2 : Méthodologie**
 ### 2.1 Collecte et préparation des données
-  2.1.1 Description du dataset
-  2.1.2 Pré-traitement des données
+  **2.1.1 Description du dataset** 
+  **2.1.2 Pré-traitement des données** 
     – Gestion des doublons
     – Traitement des valeurs manquantes
     – Encodage et standardisation
