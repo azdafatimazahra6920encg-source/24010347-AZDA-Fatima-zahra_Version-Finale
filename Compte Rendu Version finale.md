@@ -8,10 +8,6 @@
 **Objectif :** Prédire la probabilité de déménagement basée sur les patterns de transport
 
 ---
-Voici un **sommaire clair, structuré et académique**, parfaitement aligné avec le contenu de ton rapport scientifique 👇
-(Il peut être utilisé tel quel dans un mémoire, rapport ou article.)
-
----
 
 ## **Sommaire**
 
