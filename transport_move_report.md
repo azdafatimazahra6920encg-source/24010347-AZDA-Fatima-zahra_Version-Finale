@@ -28,7 +28,6 @@ Voici un **sommaire clair, structuré et académique**, parfaitement aligné ave
 ### 1. Thématique du transport et de la mobilité
 ### 2. Description du dataset *Transport Move*
 ### 3. Formulation du problème de classification
-
 ---
 
 ## Chapitre 2 : Méthodologie
