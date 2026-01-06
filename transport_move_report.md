@@ -17,17 +17,17 @@ Voici un **sommaire clair, structuré et académique**, parfaitement aligné ave
 
 ## Introduction
 
-* 1. Contexte
-* 2. Problématique
-* 3. Objectifs
+ 1. Contexte
+ 2. Problématique
+3. Objectifs
 
 ---
 
 ## Chapitre 1 : Présentation générale du projet
 
 ### 1. Thématique du transport et de la mobilité
-* 2. Description du dataset *Transport Move*
-* 3. Formulation du problème de classification
+ 2. Description du dataset *Transport Move*
+  3. Formulation du problème de classification
 
 ---
 
