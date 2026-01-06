@@ -292,6 +292,15 @@ plt.show()
 ```
 
   <img src="GRAPHE1.png" style="height:150px;margin-right:100px"/>
+Cette figure présente une analyse exploratoire des données visant à comprendre la répartition de la variable cible ainsi que celle des principales variables explicatives.
+
+Tout d’abord, la distribution de la variable cible move montre un équilibre parfait entre les deux classes (0 et 1), chacune représentant 50 % des observations. Cette répartition équilibrée est un point très positif pour la modélisation, car elle limite les risques de biais liés à un déséquilibre des classes et permet d’entraîner des modèles de classification de manière plus fiable.
+
+Ensuite, l’histogramme de la variable Entity indique une distribution relativement étalée sur son intervalle de valeurs, sans concentration excessive autour d’une valeur particulière. Cela suggère que les entités sont bien représentées dans le jeu de données et qu’aucune entité ne domine fortement les autres.
+
+La variable Code présente une distribution plus hétérogène, avec certaines valeurs apparaissant plus fréquemment que d’autres. Cette concentration peut indiquer l’existence de catégories ou de codes plus représentés dans les données, ce qui pourrait influencer le comportement du modèle et mérite une attention particulière lors de l’étape de modélisation.
+
+Enfin, la distribution de la variable Year montre une répartition globalement uniforme sur la période considérée, suggérant une bonne couverture temporelle des données. Cela permet d’éviter un biais temporel important et rend l’analyse plus robuste dans le temps
 ## 4. Conclusion
 
 ### 4.1 Synthèse des résultats
