@@ -33,12 +33,12 @@ Voici un **sommaire clair, structuré et académique**, parfaitement aligné ave
 
 **Chapitre 2 : Méthodologie**
 2.1 Collecte et préparation des données
-    2.1.1 Description du dataset
-    2.1.2 Pré-traitement des données
-      – Gestion des doublons
-      – Traitement des valeurs manquantes
-      – Encodage et standardisation
-      – Création de la variable cible
+  2.1.1 Description du dataset
+  2.1.2 Pré-traitement des données
+    – Gestion des doublons
+    – Traitement des valeurs manquantes
+    – Encodage et standardisation
+    – Création de la variable cible
 
 2.2 Analyse exploratoire des données (EDA)
     2.2.1 Feature engineering avancé
