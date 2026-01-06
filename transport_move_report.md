@@ -258,7 +258,40 @@ plt.show()
   <img src="matrice correlation.png" style="height:150px;margin-right:100px"/>
   
   La matrice de corrélation met en évidence les relations linéaires entre les 10 variables les plus corrélées avec la target 'move', utilisant une palette 'coolwarm' où le rouge indique des corrélations positives fortes (>0.7), le bleu des négatives (<-0.7), et le blanc l'absence de lien. Les valeurs annotées dans chaque cellule quantifient précisément ces liens : des coefficients proches de 1 ou -1 signalent une dépendance forte, utile pour détecter la multicolinéarité (corrélations élevées entre features prédictives) qui pourrait biaiser le modèle de prédiction du déménagement. Dans un contexte transport, des corrélations positives élevées entre distances parcourues et fréquence de trajets confirment que des patterns intenses de mobilité indiquent un risque de déménagement
-  
+## 3.5 Distributions des variables et de la cible  
+``` Python
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 10))
+
+# ----------- Distribution de la target 'move' -----------
+plt.subplot(2, 2, 1)
+labels = ['0', '1']
+sizes = df['move'].value_counts().values
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+plt.title("Distribution de la target 'move'")
+
+# ----------- Distribution Entity -----------
+plt.subplot(2, 2, 2)
+plt.hist(df['Entity'], bins=30, color='C0')
+plt.title("Distribution Entity")
+
+# ----------- Distribution Code -----------
+plt.subplot(2, 2, 3)
+plt.hist(df['Code'], bins=30, color='C0')
+plt.title("Distribution Code")
+
+# ----------- Distribution Year -----------
+plt.subplot(2, 2, 4)
+plt.hist(df['Year'], bins=30, color='C0')
+plt.title("Distribution Year")
+
+plt.tight_layout()
+plt.show()
+
+```
+
+  <img src="GRAPHE1.png" style="height:150px;margin-right:100px"/>
 ## 4. Conclusion
 
 ### 4.1 Synthèse des résultats
