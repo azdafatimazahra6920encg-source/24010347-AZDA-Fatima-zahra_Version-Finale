@@ -221,11 +221,11 @@ plt.show()
 
 **Top 5 features importantes: :** 
 
-- Air transport, passengers carried    0.702128
-- annual_passenger_change              0.253379
-- Code                                 0.021898
-- passenger_density_per_year           0.010775
-- Year                                 0.009758
+- Air transport, passengers carried :    0.702128
+- annual_passenger_change           :    0.253379
+- Code                              :    0.021898
+- passenger_density_per_year        :    0.010775
+- Year                              :    0.009758
 
 
 ---
